@@ -1,10 +1,10 @@
 <?php 
 
          
-         $server = "localhost";
+         $server = "containers-us-west-171.railway.app";
          $username = "root";
-         $password = "";
-         $database = "productos";
+         $password = "hkSDoJGSXbCXTJK5FYBN";
+         $database = "railway";
 
          //crear conexion
 
