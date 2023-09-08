@@ -1,16 +1,11 @@
 <?php 
 
          
-         $server = "containers-us-west-171.railway.app";
-         $username = "root";
-         $password = "hkSDoJGSXbCXTJK5FYBN";
-         $database = "railway";
-
-         //crear conexion
-
-         $db=new mysqli($server,$username,$password,$database);
-
-         if($db->connect_error){
-         	die("Error al conectar con la base de datos".$db->connect_error);
-         }
+     session_start();
+$DB_HOST=$_ENV["DB_HOST"];
+$DB_USER=$_ENV["DB_USER"];
+$DB_PASWOORD=$_ENV["DB_PASSWORD"];
+$DB_NAME=$_ENV["DB_NAME"];
+$DB_PORT=$_ENV["DB_PORT"];
+$db=mysqli_connect("$DB_HOST","DB_USER","DB_PASWOORD","DB_NAME","DB_PORT")
  ?>
